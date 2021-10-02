@@ -1,0 +1,24 @@
+.footer__placeholder {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: $white;
+
+    @include desktop-breakpoint{
+        padding: 6px;
+        margin-right : 0.3rem;
+    }
+    &--focus:focus {
+        background: $orange;
+        color: $white;
+        box-shadow: 0 0 0 0.25rem $tangerine;
+    }
+
+    @include tablet-breakpoint{
+        padding: 5px;
+        margin-bottom: 0.1rem;
+    }
+}
+
+input::placeholder{
+    color: $charcoal;
+}

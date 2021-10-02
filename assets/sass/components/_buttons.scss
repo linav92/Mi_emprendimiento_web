@@ -1,0 +1,29 @@
+.footer__button{
+    font-family: $poppins;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: .5rem;
+    margin: 0.5rem 3rem;
+    background: $orange;
+
+    @include desktop-breakpoint {
+      margin: 0;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+    }
+  
+    @include tablet-breakpoint{
+      margin: 0;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+    }
+   
+    &--hover:hover {
+      background: $white;
+      color: $black;
+    }
+
+    &--focus:focus{
+      box-shadow: 0 0 0 0.25rem $tangerine;
+    }
+  }

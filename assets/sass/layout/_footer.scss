@@ -1,0 +1,58 @@
+.footer {
+  background-color: $black;
+  font-family: $poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0;
+
+  @include desktop-breakpoint {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+  }
+
+  &__text{
+      color: $white;
+      text-align: center;
+  }
+
+  &__links{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 2rem;
+  
+      @include desktop-breakpoint {
+          flex-direction: row;
+          align-items: center;
+      }
+  
+
+      & .link {
+          color: $white;
+          text-decoration: none;
+          margin-bottom: 1em;
+
+          @include desktop-breakpoint {
+              margin-bottom: 0;
+              margin-right: 1em;
+          }
+
+          @include tablet-breakpoint {
+              margin-bottom: 0;
+              margin-right: 1em;
+          }
+      }
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+
+    @include desktop-breakpoint {
+      flex-direction: row;
+    }
+  }
+
+}
