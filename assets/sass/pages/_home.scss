@@ -47,10 +47,12 @@
         font-weight: $font-regular;
         line-height: 33px;
         text-align: justify;
+        padding-bottom: 2rem;
     
         @include desktop-breakpoint {
             font-size: $small;
             line-height: 25px;
+            padding-bottom: 0;
         }
     
         @include tablet-breakpoint {
@@ -95,6 +97,12 @@
         width: 45%;
     }
 
+    &__post{
+        @include desktop-breakpoint{
+            height:30vh;
+        }
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -137,11 +145,13 @@
         @include desktop-breakpoint {
             font-size: $small;
             line-height: 25px;
+            padding-bottom: 0;
         }
     
         @include tablet-breakpoint {
             font-size: $small;
             line-height: 25px;
+            padding-bottom: 1rem;
         } 
     }
     
@@ -157,14 +167,7 @@
 }
 
 .more {
-    padding: 1.875rem 1.25rem;
-    margin: .5rem;
-    border: 2px solid $black;
-
-    @include desktop-breakpoint{
-        width: 45%;
-    }
-    &__title2 {
+    &__title {
         background-color: $gray;
         color: $white;
         font-family: $poppins;
@@ -182,6 +185,13 @@
             font-size: $small;
             padding: 0.3rem
         }
+    }
+
+    &__info{
+        @include desktop-breakpoint{
+            margin: 0.2rem;
+        }
+        
     }
 
     &__list {
